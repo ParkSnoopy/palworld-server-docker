@@ -11,4 +11,5 @@ docker run --name <container-name> -d -p 8211:8211/udp sunwoo2539/palserver:late
 - Configure settings
 ```bash
 docker exec -it <container-name> nano /home/steam/Steam/steamapps/common/PalServer/Pal/Saved/Config/LinuxServer/PalWorldSettings.ini
+docker restart <container-name>
 ```
