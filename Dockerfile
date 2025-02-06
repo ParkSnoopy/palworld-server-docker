@@ -1,4 +1,4 @@
-FROM cm2network/steamcmd:steam-bookworm
+FROM ghcr.io/sonroyaalmerol/steamcmd-arm64:steam-bookworm
 
 # specify port
 EXPOSE 8211/udp
