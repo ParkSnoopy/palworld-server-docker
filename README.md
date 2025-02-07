@@ -4,12 +4,13 @@
 ## Quickstart
 
 - Start a server
+> replace `palworld-server-docker` with desired docker name
 ```bash
-docker run --name <container-name> -d -p 8211:8211/udp sunwoo2539/palserver:latest
+docker run --name palworld-server-docker -d -p 8211:8211/udp sunwoo2539/palserver:latest
 ```
 
 - Configure settings
 ```bash
-docker exec -it <container-name> nano /home/steam/Steam/steamapps/common/PalServer/Pal/Saved/Config/LinuxServer/PalWorldSettings.ini
-docker restart <container-name>
+docker exec -it palworld-server-docker nano /home/steam/Steam/steamapps/common/PalServer/Pal/Saved/Config/LinuxServer/PalWorldSettings.ini
+docker restart palworld-server-docker
 ```
