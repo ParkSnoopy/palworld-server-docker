@@ -14,3 +14,6 @@ docker run --name palworld-server-docker -d -p 8211:8211/udp sunwoo2539/palserve
 docker exec -it palworld-server-docker nano /home/steam/Steam/steamapps/common/PalServer/Pal/Saved/Config/LinuxServer/PalWorldSettings.ini
 docker restart palworld-server-docker
 ```
+
+## Supported architectures
+- amd64
