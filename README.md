@@ -1,5 +1,5 @@
 # PalWorld Server Dockerfile
-> Forked from [HowTo-PalWorld](https://github.com/A1RM4X/HowTo-Palworld.git)
+> Referenced [HowTo-PalWorld](https://github.com/A1RM4X/HowTo-Palworld.git)
 
 ## Quickstart
 
@@ -16,7 +16,7 @@ export PALSERVER_HOME="$HOME/.local/backup/PalWorld"
 docker run -d \
   -p 8211:8211/udp \
   --name palworld-server-docker \
-  --volume $PALSERVER_HOME/Pal:/home/steam/Steam/steamapps/common/PalServer/Pal:Z \
+  --volume $PALSERVER_HOME/Pal:/home/steam/Steam/steamapps/common/PalServer/Pal \
   sunwoo2539/palserver:latest
 ```
 
