@@ -4,9 +4,9 @@
 ## Quickstart
 
 1. Set data directory home
+> Set world data backup folder.
+> Change anywhere you want to save the world file into
 ```bash
-# Set world data backup folder.
-# Change anywhere you want to save the world file into
 export PALSERVER_HOME="$HOME/.local/backup/PalWorld"
 ```
 
