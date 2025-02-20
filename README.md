@@ -2,6 +2,7 @@
 > Referenced [HowTo-PalWorld](https://github.com/A1RM4X/HowTo-Palworld.git)
 
 ## Quickstart
+### TIP: replace `palworld-server-docker` with desired docker name
 
 1. Set data directory home
 > Set world data backup folder. <br>
@@ -12,7 +13,6 @@ echo $PALSERVER_HOME
 ```
 
 2. Start a server
-> replace `palworld-server-docker` with desired docker name
 ```bash
 docker run -d \
   -p 8211:8211/udp \
