@@ -8,6 +8,7 @@
 > Change anywhere you want to save the world file into
 ```bash
 export PALSERVER_HOME="$HOME/.local/backup/PalWorld"
+echo $PALSERVER_HOME
 ```
 
 2. Start a server
