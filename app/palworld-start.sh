@@ -4,4 +4,4 @@
 DIR=$( dirname "$(realpath $0)" )
 $DIR/palworld-update.sh
 
-/home/steam/Steam/steamapps/common/PalServer/PalServer.sh --userperfthreads --NoAsyncLoadingThread --UseMultithreadForDS
+$PALSERVER_HOME/PalServer.sh --userperfthreads --NoAsyncLoadingThread --UseMultithreadForDS
