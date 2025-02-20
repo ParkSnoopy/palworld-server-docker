@@ -17,7 +17,7 @@ echo $PALSERVER_HOME
 docker run -d \
   -p 8211:8211/udp \
   --name palworld-server-docker \
-  --volume $PALSERVER_HOME/Pal:/home/steam/Steam/steamapps/common/PalServer/Pal \
+  --volume $PALSERVER_HOME/Pal:/home/steam/.local/share/Steam/steamapps/common/PalServer/Pal \
   sunwoo2539/palserver:latest
 ```
 First run download dedicated server pack from steam, <br>
