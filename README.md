@@ -4,7 +4,7 @@
 ## Quickstart
 
 1. Set data directory home
-> Set world data backup folder.
+> Set world data backup folder. <br>
 > Change anywhere you want to save the world file into
 ```bash
 export PALSERVER_HOME="$HOME/.local/backup/PalWorld"
@@ -20,6 +20,8 @@ docker run -d \
   --volume $PALSERVER_HOME/Pal:/home/steam/Steam/steamapps/common/PalServer/Pal \
   sunwoo2539/palserver:latest
 ```
+First run download dedicated server pack from steam, <br>
+So, may take some time and bandwidth
 
 3. Configure settings
 ```bash
