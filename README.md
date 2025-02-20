@@ -3,12 +3,16 @@
 
 ## Quickstart
 
-- Start a server
-> replace `palworld-server-docker` with desired docker name
+1. Set data directory home
 ```bash
 # Set world data backup folder.
 # Change anywhere you want to save the world file into
 export PALSERVER_HOME="$HOME/.local/backup/PalWorld"
+```
+
+2. Start a server
+> replace `palworld-server-docker` with desired docker name
+```bash
 docker run -d \
   -p 8211:8211/udp \
   --name palworld-server-docker \
@@ -16,7 +20,7 @@ docker run -d \
   sunwoo2539/palserver:latest
 ```
 
-- Configure settings
+3. Configure settings
 ```bash
 nano $PALSERVER_HOME/Pal/Saved/Config/LinuxServer/PalWorldSettings.ini
 # Restart docker to apply changes
