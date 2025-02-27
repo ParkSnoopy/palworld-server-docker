@@ -1,5 +1,5 @@
 # PalWorld Server Dockerfile
-==Auto updated when every docker start==
+== Auto updated when every docker start ==
 
 <br>
 
