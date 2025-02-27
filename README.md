@@ -1,8 +1,13 @@
 # PalWorld Server Dockerfile
 > Referenced [HowTo-PalWorld](https://github.com/A1RM4X/HowTo-Palworld.git)
+**Auto updated when every docker start**
+
+<br><br>
 
 ## Quickstart
 ### TIP: replace `palworld-server-docker` with desired docker name
+
+<br><br>
 
 1. Set data directory home
 > Set world data backup folder. <br>
@@ -11,6 +16,8 @@
 export PALSERVER_HOME="$HOME/.local/backup/PalWorld"
 echo $PALSERVER_HOME
 ```
+
+<br><br>
 
 2. Start a server
 ```bash
@@ -23,12 +30,16 @@ docker run -d \
 First run download dedicated server pack from steam, <br>
 So, may take some time and bandwidth
 
+<br><br>
+
 3. Configure settings
 ```bash
 nano $PALSERVER_HOME/Pal/Saved/Config/LinuxServer/PalWorldSettings.ini
 # Restart docker to apply changes
 docker restart palworld-server-docker
 ```
+
+<br><br>
 
 ## Supported architectures
 - amd64
