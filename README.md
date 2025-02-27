@@ -1,7 +1,6 @@
 # PalWorld Server Dockerfile
-== Auto updated when every docker start ==
 
-<br>
+** Auto updated when every docker start **
 
 ## Quickstart
 ### TIP: replace `palworld-server-docker` with desired docker name
@@ -9,7 +8,7 @@
 <br>
 
 1. Set data directory home
-> Set world data backup folder. <br>
+> Set world data backup folder.  
 > Change anywhere you want to save the world file into
 ```bash
 export PALSERVER_HOME="$HOME/.local/backup/PalWorld"
@@ -26,7 +25,7 @@ docker run -d \
   --volume $PALSERVER_HOME/Pal:/home/steam/.local/share/Steam/steamapps/common/PalServer/Pal \
   sunwoo2539/palserver:latest
 ```
-First run download dedicated server pack from steam, <br>
+First run download dedicated server pack from steam,  
 So, may take some time and bandwidth
 
 <br>
@@ -37,8 +36,6 @@ nano $PALSERVER_HOME/Pal/Saved/Config/LinuxServer/PalWorldSettings.ini
 # Restart docker to apply changes
 docker restart palworld-server-docker
 ```
-
-<br><br>
 
 ## Supported architectures
 - amd64
