@@ -1,4 +1,14 @@
+# Using self-modified non-root steam image due to 'Palworld Dedicated Server'
+#   does not support running server as user `root`
 FROM sunwoo2539/steamcmd-nonroot:debian-12
+
+# Labels
+LABEL name="palworld-server-docker"
+LABEL version="v0.1.1"
+LABEL description="Dedicated PalWorld Server Docker"
+LABEL repository="https://github.com/ParkSnoopy/palworld-server-docker.git"
+LABEL license="MIT"
+LABEL authors="[ ParkSnoopy <117149837+ParkSnoopy@users.noreply.github.com> ]"
 
 # Initialize
 USER root
